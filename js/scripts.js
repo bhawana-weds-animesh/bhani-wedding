@@ -318,7 +318,7 @@ $(document).ready(function () {
       );
     } else {
       $.post(
-        "https://script.google.com/macros/s/AKfycbzzSWIjzJY_OhTy6-Eni2yPNj960BpqudJhc5b9UDnX3sKCuTQrwhBGjeNixiUFTmfG/exec",
+        "https://script.google.com/macros/s/AKfycbzTrYrP8C2IhITO-wGy0e6u1zEMJKjB1U_WLO213dbXitBFxCBNZcudtE0-Fg2vInuG/exec",
         data
       )
         .done(function (data) {
