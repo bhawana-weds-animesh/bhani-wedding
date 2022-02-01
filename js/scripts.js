@@ -1,7 +1,7 @@
 $(document).ready(function () {
   $(window).on("load", function () {
     // $('#dc-modal').modal('show');
-console.log("hello")
+console.log("hello...")
     $("#initModal").modal({
       backdrop: "static",
       keyboard: false,
@@ -321,7 +321,7 @@ console.log("hello")
       $('#btnSubmit').removeAttr("disabled");
     } else {
       $.post(
-        "https://script.google.com/macros/s/AKfycbzTrYrP8C2IhITO-wGy0e6u1zEMJKjB1U_WLO213dbXitBFxCBNZcudtE0-Fg2vInuG/exec",
+        "https://script.google.com/macros/s/AKfycbyM8gLnxvW3eBJOvPjmWZqjQ0VagVv0KBFtanbsitcIo3mENmOcyp1h-Y9oZmiAwDEs/exec",
         data
       )
         .done(function (data) {
