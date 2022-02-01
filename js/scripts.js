@@ -298,6 +298,8 @@ $(document).ready(function () {
   $("#rsvp-form").on("submit", function (e) {
     e.preventDefault();
     var data = $(this).serialize();
+    
+     $("#btnSubmit").attr("disabled", true);
 
     $("#alert-wrapper").html(
       alert_markup(
@@ -316,6 +318,7 @@ $(document).ready(function () {
           "<strong>Sorry!</strong> Your invite code is incorrect."
         )
       );
+      $('#btnSubmit').removeAttr("disabled");
     } else {
       $.post(
         "https://script.google.com/macros/s/AKfycbzTrYrP8C2IhITO-wGy0e6u1zEMJKjB1U_WLO213dbXitBFxCBNZcudtE0-Fg2vInuG/exec",
@@ -338,6 +341,7 @@ $(document).ready(function () {
               "<strong>Sorry!</strong> There is some issue with the server. "
             )
           );
+        $('#btnSubmit').removeAttr("disabled");
         });
     }
   });
