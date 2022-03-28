@@ -48,9 +48,9 @@ console.log("hello")
     $("#seconds").html(seconds + "<span>Secs</span>");
   }
 
-  setInterval(function () {
-    makeTimer();
-  }, 1000);
+//   setInterval(function () {
+//     makeTimer();
+//   }, 1000);
 
   /***************** Waypoints ******************/
 
